@@ -1,0 +1,165 @@
+/*-------------default style x----------*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ul, ol {
+list-style: none;
+}
+
+/*-------------fonts--------------*/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Poppins-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GlacialIndifference";
+    src: url("../fonts/GlacialIndifference-Regular.woff2") format("woff2"),
+    url("../fonts/GlacialIndifference-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GlacialIndifference";
+    src: url("../fonts/GlacialIndifference-Bold.woff2") format("woff2"),
+    url("../fonts/GlacialIndifference-Bold.woff") format("woff");
+}
+
+/*--------------hero section------------*/
+
+.hero {
+width: 100%;
+min-height: 100vh;
+background: url("../images/myphotoss/napapijri.jpg") no-repeat center center/cover;
+transition: background-image 0.5s ease-in-out;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero.photo2 {
+background: url("../images/myphotoss/black-iceland.jpg") no-repeat center center/cover;
+}
+
+.hero.photo3 {
+background: url("../images/myphotoss/rock-iceland.jpg") no-repeat center center/cover;
+}
+
+.top-right {
+position: absolute;
+top: 25px;
+right: 118px;
+}
+
+.number-block {
+position: relative;
+display: inline-block;
+text-align: center;
+}
+
+.number-block .number {
+font-family: 'Poppins', sans-serif;
+font-size: clamp(80px, 8vw, 158.3px);
+font-weight: 800;
+letter-spacing: 4.75px;
+color: #1C1C1C;
+}
+
+.number-block .about-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Poppins', sans-serif;
+font-size: clamp(20px, 3vw, 43.17px);
+font-weight: 800;
+color: #373737;
+}
+
+
+.info-block {
+position: absolute;
+top: 50%;
+left: 55%; 
+transform: translate(-10%, -50%);
+text-align: left;
+}
+
+.info-block h2 {
+font-family: "GlacialIndifference", sans-serif;
+font-size: clamp(24px, 3vw, 49.7px);
+color: #212121;
+}
+
+.info-block h1 {
+font-family: "Poppins", sans-serif;
+font-size: clamp(36px, 5vw, 70px);
+font-weight: 800;
+color: #212121;
+}
+
+.info-block p {
+font-family: "Poppins", sans-serif;
+font-size: clamp(14px, 2vw, 16px);
+color: #555;
+margin: 10px 0;
+}
+
+
+.social-links {
+margin-top: 30px;
+}
+
+.social-links img {
+width: 30px;
+height: 30px;
+margin: 0 5px;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+transform: scale(1.2); 
+}
+
+
+.bottom-right {
+position: absolute;
+bottom: 40px;
+right: 40px;
+text-align: left;
+}
+
+.bottom-right p {
+font-family: "Montserrat", sans-serif;
+font-size: clamp(16px, 2vw, 24px);
+}
+
+.bottom-right p strong {
+color: #E93566;
+}
+
+.underline {
+width: 340px;
+height: 6px;
+background-color: #E93566;
+margin-top: 10px;
+  transition: width 0.3s ease;
+}
+
+.underline:hover {
+width: 380px; 
+}
