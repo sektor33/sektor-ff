@@ -128,3 +128,18 @@ dots.forEach((dot, index) => {
   });
 
 
+  window.addEventListener('scroll', function() {
+  const skills = document.querySelectorAll('.progress');
+  const aboutSection = document.querySelector('.about-section');
+  const sectionTop = aboutSection.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (sectionTop < screenHeight) {
+    skills.forEach(skill => {
+      const percent = skill.getAttribute('data-percent');
+      skill.style.width = percent + '%';
+    });
+  }
+});
+
+
