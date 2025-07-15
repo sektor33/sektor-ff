@@ -51,3 +51,38 @@ function resetInterval() {
 
 
 showBackground();
+
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+    slides[index].classList.add("active");
+    dot.classList.add("active");
+  });
+});
+
+
+
+ const categoryItems = document.querySelectorAll('.project-categories li');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  categoryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelector('.project-categories li.active').classList.remove('active');
+      item.classList.add('active');
+
+      const filter = item.dataset.filter;
+
+      projectCards.forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });

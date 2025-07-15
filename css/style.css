@@ -36,6 +36,12 @@ list-style: none;
     url("../fonts/GlacialIndifference-Bold.woff") format("woff");
 }
 
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli-Regular.woff2") format("woff2"),
+    url("../fonts/Muli-Regular.woff") format("woff");
+}
+
 /*--------------hero section------------*/
 
 .hero {
@@ -78,6 +84,7 @@ text-align: center;
 
 .number-block .number {
 font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', Arial, sans-serif;
 font-size: clamp(80px, 8vw, 158.3px);
 font-weight: 800;
 letter-spacing: 4.75px;
@@ -91,6 +98,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 white-space: nowrap;
 font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', Arial, sans-serif;
 font-size: clamp(20px, 3vw, 43.17px);
 font-weight: 800;
 color: #373737;
@@ -107,12 +115,14 @@ text-align: left;
 
 .info-block h2 {
 font-family: "GlacialIndifference", sans-serif;
+font-family: "GlacialIndifference", Arial, sans-serif;
 font-size: clamp(24px, 3vw, 49.7px);
 color: #212121;
 }
 
 .info-block h1 {
 font-family: "Poppins", sans-serif;
+font-family: "Poppins", Arial, sans-serif;
 font-size: clamp(36px, 5vw, 70px);
 font-weight: 800;
 color: #212121;
@@ -120,6 +130,7 @@ color: #212121;
 
 .info-block p {
 font-family: "Poppins", sans-serif;
+font-family: "Poppins", Arial, sans-serif;
 font-size: clamp(14px, 2vw, 16px);
 color: #555;
 margin: 10px 0;
@@ -152,6 +163,7 @@ text-align: left;
 
 .bottom-right p {
 font-family: "Montserrat", sans-serif;
+font-family: "Montserrat", Arial, sans-serif;
 font-size: clamp(16px, 2vw, 24px);
 
 }
@@ -200,4 +212,468 @@ width: 380px;
 
 .arrow.right {
   right: 20px;
+}
+
+
+/*------------second section----------------*/
+
+.about-section {
+margin-top: 135px;
+}
+
+.about-container {
+display: grid;
+grid-template-columns: 1fr auto 1fr; 
+align-items: center;
+gap: 68px;
+max-width: 1200px;
+margin: 0 auto; 
+}
+
+.about-left {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+text-align: right;
+}
+
+.about-left h2 {
+font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+font-size: 40px;
+color: #222222;
+text-align: right;
+}
+
+.about-left .subtitle {
+display: block;
+font-family: "Muli", Arial, sans-serif;
+font-size: 14px;
+color: #DAAE19;
+margin-bottom: 20px;
+text-align: right;
+}
+
+.about-left p {
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 15px;
+  color: #222222;
+  text-align: right;
+  line-height: 1.6;
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
+.about-left .hire-btn {
+  display: inline-block;
+  background-color: #E93566;
+  color: #ffffff;
+  font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+  font-size: 15px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-left .hire-btn:hover {
+  transform: scale(1.05);
+  background-color: #c62855;
+}
+
+.about-center {
+  display: flex;
+  justify-content: center;
+}
+
+.about-center img {
+max-width: 430px;
+min-height: 603px;
+object-fit: cover;
+background-color: #f5f5f5; 
+box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+}
+
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131a36; 
+  padding: 40px 60px; 
+  margin: 100px auto; 
+  gap: 50px;
+}
+
+.contact-cards .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-cards .card .icon {
+  width: 65px;
+  height: 65px;
+  border: 2px dashed #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0; 
+}
+
+.contact-cards .card .icon img {
+  width: 28px;
+  height: 28px;
+}
+
+
+.contact-cards .cards-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-cards .cards-text h3 {
+  font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.3px;
+}
+
+.contact-cards .cards-text p {
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0.42px;
+}
+
+.contact-cards .card a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
+}
+
+.contact-cards .card .icon.active {
+  background-color: transparent;
+  border: 2px dashed #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-cards .card:hover .icon.active {
+  background-color: #e93566;
+  border: 2px solid #e93566;
+}
+
+.contact-cards .card:hover .icon {
+  background-color: #e93566;
+  border: 2px solid #e93566;
+}
+
+/*---------------grid section-------------*/
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+}
+
+.service-card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  max-width: 285px;
+  min-height: 360px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background-color: #fafafa;
+  color: #222222;
+}
+
+.card-front h3 {
+  font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.44px;
+}
+
+.card-back {
+  background-color: #15263E;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back h3 {
+  font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-back p {
+  font-family: "Muli", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+
+/*-------------------recomendation section----------------*/
+.testimonial {
+  background: url("../images/project-photos/recomendation.jpg") no-repeat center center/cover;
+  min-height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 144px;
+}
+
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  color: #fff;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.testimonial-image {
+  width: 170px;
+  height: 170px;
+  border: 3px dashed #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; 
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+.testimonial-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9px;
+  margin-left: 50px; 
+}
+
+.testimonial-details .profession {
+  color: #e93566;
+  font-size: 14px;
+}
+
+.testimonial-details h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: -30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #e93566;
+  border-color: #e93566;
+}
+
+.quote {
+  font-family: "GlacialIndifference-Bold", Arial, sans-serif;
+  font-size: 100px; 
+  color: #ffffff;
+  display: block;
+}
+
+
+
+/*---------------latest projects sectiom-----------------*/
+
+
+.latest-projects {
+  margin: 55px auto 170px auto;
+  max-width: 1200px;
+}
+.section-title {
+  font-size: 70px;
+  color: #2E2E2E;
+  font-family: 'GlacialIndifference-Bold', sans-serif;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.projects-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; 
+}
+
+.project-categories {
+  background: #15263E;
+  width: 240px;
+  height: 401px; 
+  padding: 50px 71px 59px 59px;
+  box-sizing: border-box;
+  flex-shrink: 0; 
+}
+
+.project-categories li {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'GlacialIndifference-Bold', sans-serif;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.project-categories li.active {
+  color: #e93566;
+}
+.project-categories li.active::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 71px;
+  height: 2px;
+  background: #e93566;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+.project-card {
+  max-width: 300px;
+  min-height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center; 
+}
+.project-card:hover .overlay {
+  opacity: 1;
+}
+.project-card .heart {
+  color: #e93566;
+  font-size: 14px;
+  border: 2px solid #e93566;
+  border-radius: 50%;
+  padding: 18px; 
+  margin-bottom: 17px; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+
+.project-card .overlay .time {
+  font-size: 14px;
+  margin-bottom: 7px; 
+  display: block;
+}
+
+.project-card .overlay h3 {
+  font-size: 18px;
+  color: #fff;
+  font-family: 'GlacialIndifference-Bold', sans-serif;
 }
