@@ -87,8 +87,7 @@ dots.forEach((dot, index) => {
     });
   });
 
-
-
+  //------------form--------------
  
   const form = document.getElementById('contactForm');
   const modal = document.getElementById('successModal');
